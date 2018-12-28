@@ -159,7 +159,6 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="skillCard" id="sc02" onclick="toggleNeon(this);">
-                    
                     <!-- Neon lights css effect -->
                     <h4>UX Design / Prototyping</h4>
                     <p>Proficient in using industry standard tools such as Sketch or InVision Studio to mockup wireframes and create animated prototypes.</p>
@@ -295,6 +294,8 @@ get_header(); ?>
                     $comments = filter_var($_POSt['comments']);
                     $headers = $email . " has sent an email!";
 
+                    // TODO Add email functionality here
+
                     if ($name == "This") {
                         //wp_mail($to, $comments, );
                     }
@@ -321,11 +322,6 @@ get_header(); ?>
             // console.log(i);
             skillCard.classList.toggle(neonColors[i]);
         }
-    }
-
-    let roob = {
-        name: 'Rob',
-        lastName: 'Gruen'
     }
 
     function formSubmit() {
