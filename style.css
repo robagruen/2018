@@ -1,0 +1,598 @@
+/*
+Theme Name: 2018
+Template: twentyseventeen
+Author: Rob A. Gruen
+Author URI: https://whatacool.website
+Description: This is a custom theme that I'm making for my website.
+*/
+
+
+/*--------------------------------------------------------------
+Reset
+--------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+/*--------------------------------------------------------------
+Fonts
+--------------------------------------------------------------*/
+@font-face {
+	font-family: 'Raleway';
+	src: url("fonts/Raleway-Medium.tff");
+}
+
+/*--------------------------------------------------------------
+Front Page
+--------------------------------------------------------------*/
+h1, h2, h3, h4 {
+	color: #fff;
+	font-weight: 500 !important;
+}
+
+p {
+	color: #333;/*565656*/
+	text-align: center;
+}
+
+.contentSection {
+	width: 100%;
+	padding: 10px 25px;
+}
+
+.title {
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	font-size: 36px;
+	color: #fff;
+	padding: 25px 0;
+}
+
+.site-branding-text {
+	background: rgba(0,0,0,0.75);
+	padding: 5px;
+}
+
+footer {
+	margin-top: 0 !important;
+}
+
+.site-info, .site-info p, .wrap {
+	margin: 0;
+	padding: 0;
+}
+
+.site-info {
+	padding: 10px 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.site-info p {
+	text-align: left;
+}
+
+#logoContainer {
+	width: 30%;
+	margin: auto;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	min-width: 200px;
+}
+
+.site-header .navigation-top .menu-scroll-down {
+	top: 0 !important;
+}
+
+.menuLink:hover {
+	color: #ff2c64 !important;
+}
+
+.wrap {
+	padding: 0 !important;
+	padding-left: 25px !important;
+}
+
+.navigation-top {
+	z-index: 700;
+}
+
+/*--------------------------------------------------------------
+About Me
+--------------------------------------------------------------*/
+#aboutMeSection {
+	background: #FFC72C;
+}
+
+#aboutMeContentContainer {
+	display: flex;
+}
+
+.aboutMeContent {
+	flex-direction: row;
+}
+
+#description {
+	width: 60%;
+}
+
+#nameTitle {
+	width: 40%;
+}
+
+.aboutMeContent p {
+	word-break: break-word;
+	padding: 0 25px;
+	margin: auto;
+}
+
+#pictureOfMe {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	margin: auto;
+	display: block;
+}
+
+#resumeBTNContainer {
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+#resumeBTN span {
+	position: relative;
+	bottom: 5px;
+}
+
+.aboutMeContent h2, .aboutMeContent h3 {
+	color: #fff;
+	padding-top: 0;
+	text-align: center;
+}
+
+.fa {
+	font-size: 35px;
+	text-align: center;
+}
+
+.titleContainer {
+	background: rgba(0,0,0,0.5);
+	width: 300px;
+	margin: 20px auto;
+}
+
+/*--------------------------------------------------------------
+Skills
+--------------------------------------------------------------*/
+#skillsSection {
+	background: #2cceff;
+}
+
+.languagesContainer {
+	display: flex;
+}
+
+.language {
+	flex-direction: row;
+	width: 33%;
+}
+
+.svgContainer {
+	width: 50%;
+	margin: auto;
+}
+
+#jsLogo {
+	margin-top: 11%;
+}
+
+#skillCardContainer {
+	width: 90%;
+	display: flex;
+	margin: auto;
+}
+
+.skillCard {
+	width: 33%;
+	height: 400px;
+	background: #fff;
+	margin: 1.5em !important;
+	transition: .5s all ease;
+	/*transform: rotateX(60deg) scale(0.8);*/
+	border: solid 1px #333;
+	border-radius: 20px;
+	padding: 10px 15px;
+	/*box-shadow: 0px 20px 50px #555;  315 deg*/
+	background: linear-gradient(0deg, rgba(94,44,255,1) 0%, rgba(255,199,44,1) 50%);
+	/*perspective: 900px;*/
+
+	animation: entry 1s linear 1;
+}
+
+.skillCard:hover {
+	transform: rotate(0deg) scale(1) translateY(10px);
+	box-shadow: 0px 20px 50px #555;
+	transition: .5s all ease;
+	/*z-index: 400;*/
+}
+
+#sc01:hover, #sc02:hover, #sc03:hover {
+	transform: rotateX(0deg) scale(1.2);
+	/*border: solid 2px #ff2c64;*/
+}
+
+.skillCard h4 {
+	text-align: center;
+}
+
+.iconContainer {
+	display: flex;
+}
+
+.iconContainer div {
+	width: 75px;
+}
+
+#phpDiv svg, #phpDiv {
+	height: 150px;
+	width: 75px;
+}
+
+.iconContainer div:nth-child(2) {
+	display: block;
+	float: right;
+}
+
+.animationPurple {
+	-webkit-animation: purpleNeon 1.5s ease-in-out infinite alternate;
+	-moz-animation: purpleNeon 1.5s ease-in-out infinite alternate;
+	animation: purpleNeon 1.5s ease-in-out infinite alternate;
+	border-color: #fff;
+}
+
+.animationYellow {
+	-webkit-animation: yellowNeon 1.5s ease-in-out infinite alternate;
+	-moz-animation: yellowNeon 1.5s ease-in-out infinite alternate;
+	animation: yellowNeon 1.5s ease-in-out infinite alternate;
+	border-color: #fff;
+}
+
+@-webkit-keyframes purpleNeon {
+	from {
+		box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #5e2cff, 0 0 70px #5e2cff, 0 0 80px #5e2cff, 0 0 100px #5e2cff, 0 0 150px #5e2cff;
+	}
+	to {
+		box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #5e2cff, 0 0 35px #5e2cff, 0 0 40px #5e2cff, 0 0 50px #5e2cff, 0 0 75px #5e2cff;
+	}
+}
+
+@-webkit-keyframes yellowNeon {
+	from {
+		box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFC72C, 0 0 70px #FFC72C, 0 0 80px #FFC72C, 0 0 100px #FFC72C, 0 0 150px #FFC72C;
+	}
+	to {
+		box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFC72C, 0 0 35px #FFC72C, 0 0 40px #FFC72C, 0 0 50px #FFC72C, 0 0 75px #FFC72C;
+	}
+}
+
+/*--------------------------------------------------------------
+Portfolio
+--------------------------------------------------------------*/
+#pastWorkSection {
+	background: #5e2cff;
+}
+
+.pastProjectRow {
+	display: flex;
+}
+
+.pastProjectItem {
+	flex-direction: row;
+}
+
+.pastProjectItem p {
+	color: #fff;
+}
+
+.pastProjectRowReverse .pastProjectItem {
+	text-align: right;
+}
+
+.iFrameContainer {
+	width: 50%;
+	overflow: hidden;
+}
+
+.descriptionContainer {
+	width: 50%;
+	margin: 10px;
+	padding: 10px 25px;
+}
+
+.descriptionContainer p {
+	text-align: left;
+	visibility: hidden;
+}
+
+.aBTN {
+	width: 150px;
+	height: 25px;
+	margin: auto;
+	border-radius: 100px;
+	background-color: #ff2c64;
+	color: #fff;
+	border: solid 1px #fff;
+}
+
+.aBTN:hover, #submitContainer input:hover, #resumeBTN:hover {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	transform: scale(1.1,1.1);
+	background-color: #FFC72C;/*2CCEFF*/
+	color: #ff2c64;/*000*/
+	border: solid 2px #ff2c64;
+	font-weight: 500;
+}
+
+.aBTN span {
+	position: relative;
+	bottom: 13px;
+}
+
+.portfolioSiteTitles {
+	color: #fff;
+	height: 100px;
+}
+
+.sitePreviewOverlays {
+	width: 50%;
+	position: absolute;
+	visibility: hidden;
+	background-image: url("http://whatacool.website/wp-content/uploads/2018/10/whalestarPreview.png");
+}
+
+#compositesImage:hover #compositesPreview, #compositesPreview:hover {
+	visibility: visible;
+	background: #051553;
+	opacity: 0.5;
+}
+
+/*--------------------------------------------------------------
+Contact Form
+--------------------------------------------------------------*/
+#contactMeSection {
+	background: #565656;
+}
+
+#inputParent {
+	display: flex;
+}
+
+.contactInput {
+	flex-direction: row;
+}
+
+.contactLabels {
+	font-size: 18px;
+	margin-bottom: 0;
+	margin-top: 10px;
+	color: #fff;
+	text-align: left;
+	font-weight: 200;
+}
+
+#inputContainer {
+	display: flex;
+	width: 75%;
+	margin: auto;
+}
+
+.flexChildInput {
+	width: 100%;
+	margin: auto;
+	flex-direction: row;
+}
+
+#submitContainer {
+	padding: 20px 0;
+	text-align: center;
+}
+
+#submitContainer input {
+	font-size: 16px;
+	font-weight: 100;
+}
+
+#submitContainer input, #resumeBTN {
+	width: 250px;
+	height: 50px;
+	margin: auto;
+	border-radius: 200px;
+	background-color: #ff2c64;
+	border: solid 1px #fff;
+}
+
+#commentsContainer {
+	width: 75%;
+	margin: auto;
+}
+
+#nameInput {
+	padding-right: 10px;
+}
+
+#emailInput {
+	padding-left: 10px;
+}
+
+/*--------------------------------------------------------------
+Media Queries
+--------------------------------------------------------------*/
+/*@media (min-width: 991px) {
+	.skillCard {
+		margin: 1em;
+	}
+}*/
+
+@media (max-width: 1009px) {
+	#skillCardContainer {
+		flex-direction: column;
+	}
+
+	.skillCard {
+		width: 45%;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		min-width: 375px;
+	}
+}
+
+@media (max-width: 991px) {
+	#commentsContainer, #inputContainer {
+		width: 50%;
+		flex-direction: column;
+	}
+
+	#nameInput, #emailInput {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+@media (min-width: 768px) and  (max-width: 991px) {
+	.skillCard {
+		margin: 0.25em;
+	}
+}
+
+@media (max-width: 768px) {
+	/*.site-info  {
+		margin-bottom: 1em;
+	}*/
+
+	#commentsContainer, #inputContainer {
+		width: 75%;
+		flex-direction: column;
+	}
+
+	#nameInput, #emailInput {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.pastProjectRow {
+		flex-direction: column;
+		width: 100%;
+		margin: auto;
+		margin-bottom: 50px;
+	}
+
+	.pastProjectItem {
+		text-align: center;
+	}
+
+	.pastProjectRowReverse {
+		flex-direction: column-reverse;
+	}
+
+	.portfolioSiteTitles, .aBTN {
+		flex-direction: row;
+	}
+
+	.portfolioSiteTitles {
+		height: auto;
+	}
+
+	.iFrameContainer, .descriptionContainer {
+		width: 100%;
+	}
+
+	#aboutMeContentContainer {
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+
+	#description, #nameTitle {
+		width: 100%;
+	}
+	
+	.descriptionContainer p {
+		display: none;
+	}
+
+	.pastProjectRowReverse .pastProjectItem {
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	#resumeBTN span {
+		bottom: 0;
+	}
+
+	.aBTN span {
+		bottom: 7px;
+	}
+
+	.skillCard {
+		min-width: 250px;
+	}
+}
+
+/*--------------------------------------------------------------
+Animation
+--------------------------------------------------------------*/
+@keyframes entry {
+	0% {
+		top: -20%;
+		opacity: 0.1;
+	}
+	100% {
+		top: 0%;
+	}
+}
+
+/*--------------------------------------------------------------
+Confetti
+--------------------------------------------------------------*/
+
+#confetti {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100% !important;
+	width: 100%;
+}
+
+a.iprodev {
+	line-height: normal;
+	font-family: Varela Round, sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 13px;
+	color: #A7AAAE;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	border: 1px solid #A7AAAE;
+	padding: 12px 20px 10px;
+	border-radius: 50px;
+	transition: all .1s ease-in-out;
+	text-transform: uppercase;
+}
+
+a.iprodev:hover {
+	background: #A7AAAE;
+	color: white;
+}
