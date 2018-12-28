@@ -289,12 +289,17 @@ get_header(); ?>
                 </div>
                 <?php
                     $to = 'rgruen@live.com';
+                    $subject = $name . " has sent an email!";
                     $name = filter_var($_POSt['name']);
                     $email = filter_var($_POSt['email']);
                     $comments = filter_var($_POSt['comments']);
                     $headers = $email . " has sent an email!";
+                    $attachments = [];
+
+                    wp_mail( $to, $subject, $comments, $headers, $attachments );
 
                     // TODO Add email functionality here
+                    // This should be merged into Development
 
                     if ($name == "This") {
                         //wp_mail($to, $comments, );
