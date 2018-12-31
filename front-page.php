@@ -15,7 +15,11 @@
  *
  */
 
-get_header(); ?>
+get_header();
+
+// Other comment
+
+?>
 
 <div id="primary" class="content-area content">
 	<main id="main" class="site-main" role="main">
@@ -295,6 +299,7 @@ get_header(); ?>
                     $headers = $email . " has sent an email!";
 
                     // TODO Add email functionality here
+                    // Delete this dumb line
 
                     if ($name == "This") {
                         //wp_mail($to, $comments, );
@@ -323,6 +328,19 @@ get_header(); ?>
             skillCard.classList.toggle(neonColors[i]);
         }
     }
+
+    let roob = {
+        name: 'Rob',
+        lastName: 'Gruen',
+        age: function(years) {
+            console.log(2018 - years);
+        },
+        school: 'NKU'
+    }
+
+    console.log(roob.name);
+
+    roob.age(22);
 
     function formSubmit() {
         let name = document.forms["contactForm"]["nameInputField"].value;
