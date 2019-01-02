@@ -205,7 +205,7 @@ get_header();
                 <div class="skillCard" id="sc03" onclick="toggleNeon(this);">
                     <h4>Web Frameworks</h4>
                     <p>Experience from using a variety of popular web frameworks to create scaleable, progressive web applications.</p>
-                    <div style="widoth: 75px; margin: auto; text-align: center;">
+                    <div style="width: 75px; margin: auto; text-align: center;">
                         <svg height="75px" width="75px" style="height: 75px; width: 75px; background: rgba(255,255,255,0.5); border-radius: 15px;" version="1.1" id="Layer_2_1_" x="0px" y="0px" viewBox="0 0 841.9 595.3" enable-background="new 0 0 841.9 595.3">
                             <g>
                                 <path fill="#61DAFB" d="M666.3,296.5c0-32.5-40.7-63.3-103.1-82.4c14.4-63.6,8-114.2-20.2-130.4c-6.5-3.8-14.1-5.6-22.4-5.6v22.3
